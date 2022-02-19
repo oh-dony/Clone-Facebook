@@ -433,7 +433,6 @@ header {
 }
 
 .user-dropdown-footer{
-    /* max-width: 340px; */
     padding: 8px;
 }
 
@@ -527,8 +526,6 @@ header {
 
 .max-width-500{
     max-width: 500px; 
-    /* text-align: center; */
-    /* padding: 10px 80px; */
 }
 
 .left-content{
@@ -608,6 +605,7 @@ header {
     padding: 25px;
     width: 100%;
     height: 220px;
+    margin-bottom: 20px;
 }
 
 .user-story-photo img{
@@ -659,7 +657,7 @@ header {
     filter: brightness(100%);
     cursor: pointer;
     transition: all 0.2s ease;
-    z-index: -1;
+    z-index: 1;
 }
 
 .stories article:hover{
@@ -743,7 +741,8 @@ header {
 
 .feed-post-actions a{
     display: flex;
-    padding-top: 8px;
+    padding: 8px;
+    margin-top: 10px;
     align-items: center;
     border-radius: 8px;
     font-size: 15px;
