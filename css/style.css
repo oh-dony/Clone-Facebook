@@ -525,7 +525,18 @@ header {
 }
 
 .max-width-500{
+<<<<<<< Updated upstream
     max-width: 500px; 
+=======
+<<<<<<< HEAD
+    max-width: 650px; 
+    padding: 10px 80px;
+=======
+    max-width: 500px; 
+    /* text-align: center; */
+    /* padding: 10px 80px; */
+>>>>>>> d9b4426446293799aef3b8a14d1b63d0d0492762
+>>>>>>> Stashed changes
 }
 
 .left-content{
@@ -541,21 +552,55 @@ header {
 
 .left-content::-webkit-scrollbar-track {
     border-radius: 10px;
+<<<<<<< Updated upstream
 }
 
 .left-content::-webkit-scrollbar {
     width: 8px;
+=======
+<<<<<<< HEAD
+    margin-top: 15px;
+    margin-bottom: 130px;
+}
+
+.left-content::-webkit-scrollbar {
+    width: 5px;
+=======
+}
+
+.left-content::-webkit-scrollbar {
+    width: 8px;
+>>>>>>> d9b4426446293799aef3b8a14d1b63d0d0492762
+>>>>>>> Stashed changes
 }
 
 .left-content::-webkit-scrollbar-thumb {
     border-radius: 10px;
+<<<<<<< Updated upstream
     background-color: var(--scrollbar);
+=======
+<<<<<<< HEAD
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--secondary);
+=======
+    background-color: var(--scrollbar);
+>>>>>>> d9b4426446293799aef3b8a14d1b63d0d0492762
+>>>>>>> Stashed changes
     visibility: hidden;
     opacity: 0;
 }
 
 .left-content-links{
+<<<<<<< Updated upstream
     border-bottom: var(--soft-border); 
+=======
+<<<<<<< HEAD
+    border-bottom: var(--soft-border);
+    
+=======
+    border-bottom: var(--soft-border); 
+>>>>>>> d9b4426446293799aef3b8a14d1b63d0d0492762
+>>>>>>> Stashed changes
 }
 
 .left-content-hide-links{
@@ -568,6 +613,14 @@ header {
     visibility: visible;
     opacity: 1;
     height: auto;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    
+    /* height: 100%; */
+=======
+>>>>>>> d9b4426446293799aef3b8a14d1b63d0d0492762
+>>>>>>> Stashed changes
 }
 
 .left-content-links a{
@@ -741,8 +794,12 @@ header {
 
 .feed-post-actions a{
     display: flex;
+<<<<<<< Updated upstream
     padding: 8px;
     margin-top: 10px;
+=======
+    padding-top: 8px;
+>>>>>>> Stashed changes
     align-items: center;
     border-radius: 8px;
     font-size: 15px;
