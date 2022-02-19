@@ -517,25 +517,75 @@ header {
 
 .max-width-500{
     max-width: 650px; 
-    padding: 30px 80px;
+    padding: 10px 80px;
 }
 
 .left-content{
     width: 300px;
-    padding: 20px;
+    padding: 10px 8px;
+    overflow: auto;
 }
 
-.left-content a{
+.left-content:hover.left-content::-webkit-scrollbar-thumb {
+    visibility: visible;
+    opacity: 1;
+}
+
+.left-content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 130px;
+}
+
+.left-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.left-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--secondary);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.left-content-links{
+    border-bottom: var(--soft-border);
+    
+}
+
+.left-content-hide-links{
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+.show-links{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    
+    /* height: 100%; */
+}
+
+.left-content-links a{
     display: flex;
     align-items: center;
     color: var(--text);
     font-weight: 600;
     padding: 5px 10px;
     border-radius: 8px;
-    
+    margin: 8px 0;    
 }
 
-.left-content a img{
+.left-content-links a span{
+    background: var(--link-hover);
+    border-radius: 50%;
+    padding: 4px 6px;
+    margin-right: 10px;
+}
+
+.left-content-links a img{
     width: 28px;
     height: 28px;
     object-fit: cover;
@@ -543,7 +593,7 @@ header {
     margin-right: 10px;
 }
 
-.left-content a:hover{
+.left-content-links a:hover{
     background: var(--link-hover);
 }
 

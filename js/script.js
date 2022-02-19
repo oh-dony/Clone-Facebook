@@ -27,6 +27,13 @@ $(function () {
 
 });
 
+// ==== SHOW MORE LEFT SIDE ==== //
+let showMore = document.querySelector(".show-more");
+let linksShow = document.querySelector(".left-content-hide-links");
+showMore.addEventListener("click", () => {
+  linksShow.classList.toggle("show-links");
+});
+
 // ==== REMOVE ATIVOS AO CLICAR NO BODY ==== //
 $(document).mouseup(function (e) {
     var notificationBtn = $('.notification');
@@ -46,11 +53,11 @@ $(document).mouseup(function (e) {
         }
     }
 
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      if ($('.has-colapse').hasClass('list-svg-active')) {
-          $('.has-colapse').removeClass('list-svg-active');
-      }
-  }
+  //   if (!container.is(e.target) && container.has(e.target).length === 0) {
+  //     if ($('.has-colapse').hasClass('list-svg-active')) {
+  //         $('.has-colapse').removeClass('list-svg-active');
+  //     }
+  // }
 });
 
 // ==== DARKMODE ==== //
