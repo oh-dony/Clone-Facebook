@@ -599,6 +599,7 @@ header {
     background: var(--link-hover);
 }
 
+/* ==== STOTRIES ==== */
 .stories {
     display: flex;
     gap: 8px;
@@ -606,6 +607,25 @@ header {
     width: 100%;
     height: 220px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.see-all-stories span{
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    display: flex;
+    padding: 6px;
+    border-radius: 50%;
+    background: var(--contents);
+    box-shadow: var(--soft-shadow);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.see-all-stories span i{
+    font-size: var(--font-max);
+    color: var(--secondary);
 }
 
 .user-story-photo img{
@@ -822,7 +842,7 @@ header {
 
 .pub img{
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover;  
 }
 
@@ -899,10 +919,6 @@ header {
     background: var(--link-hover);
 }
 
-.comments{
-   
-}
-
 .comments-content{
     display: flex;
     align-items: center;
@@ -910,6 +926,7 @@ header {
 }
 
 .comment-request {
+    margin-top: 5px;
     padding-left: 80px;
 }
 
@@ -931,13 +948,34 @@ header {
 }
 
 .comment-author p{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--text); 
+    cursor: pointer;
+    display: inline-block;
+}
+
+.comment-author p:hover{
+    text-decoration: underline;
 }
 
 .comment{
     color: var(--text);
+    font-size: 15px;
+}
+
+.comment strong{
+    cursor: pointer;
+}
+
+.comment strong:hover{
+    text-decoration: underline;
+}
+
+.comente-img img{
+    margin-top: 5px;
+    width: 100%;
+    cursor: pointer;
 }
 
 .comment-reaction{
@@ -958,6 +996,7 @@ header {
     margin-right: 2px;
     border-radius: 50%;
     object-fit: cover;  
+    cursor: pointer;
 }
 
 .comment-reaction span{
@@ -966,7 +1005,7 @@ header {
 }
 
 .comment-actions{
-    padding: 10px 70px;
+    padding: 5px 70px;
 }
 
 .comment-actions a{
@@ -997,6 +1036,42 @@ color: #F3425F !important;
 .comment-actions a:hover{
     text-decoration: underline;
 }
+
+.write-a-comment{
+    padding: 12px 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+.write-a-comment-user-photo {
+    position: relative;
+    width: 32px;
+    margin-right: 10px;
+}
+
+.write-a-comment-user-photo img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;  
+    cursor: pointer;
+}
+
+.user-status{
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+}
+
+.user-status i{
+    color: #45BD62;
+}
+
+.write-a-comment-input input{
+    padding: 8px 12px;
+    width: 420px;
+}
+
 
 .c{
     /* background: #65676B; */
