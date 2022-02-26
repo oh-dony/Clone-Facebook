@@ -655,7 +655,7 @@ header {
     position: fixed;
     top: 56px;
     left: 0;
-    width: 360px;
+   width: 320px;
     flex-basis: 360px;
     height: calc(100vh - 56px);
     padding: 10px 8px;
@@ -892,7 +892,6 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 360px;
 }
 
 .feed-post{
