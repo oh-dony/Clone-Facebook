@@ -643,6 +643,7 @@ header {
     padding-top: 55px;
     width: 100%;
     display: flex;
+    justify-content: center;
     position: relative;
 }
 
