@@ -2,12 +2,23 @@
 $(function () {
 
   const dropdown = {
+    messenger: document.querySelector(".messenger"),
+    messengerTopDrop: document.querySelector(".messenger-dropdown"),
+
     notification: document.querySelector(".notification"),
     notificationToDrop: document.querySelector(".notification-dropdown"),
 
     user: document.querySelector(".user"),
     userToDrop: document.querySelector(".user-dropdown")
   }
+
+  // ==== MESSENGER ==== //
+  let messengerClick = dropdown.messenger;
+  let messengerCollapse = dropdown.messengerTopDrop;
+  messengerClick.addEventListener("click", () => {
+    messengerCollapse.classList.toggle("dropdown-colapse");
+    messengerClick.classList.toggle("list-svg-active");
+  });
   
   // ==== NOTIFICATION ==== //
   let notificationClick = dropdown.notification;
@@ -32,12 +43,33 @@ let showMore = document.querySelector(".show-more");
 let linksShow = document.querySelector(".left-content-hide-links");
 showMore.addEventListener("click", () => {
   linksShow.classList.toggle("show-links");
+  if ($("#show-more").text() == "Ver mais") {
+    $("#show-more").text("Ver menos");
+  }
+  else {
+    $("#show-more").text("Ver mais");
+  }
+});
+
+// ==== SHOW MORE LEFT SIDE ==== //
+let showMoreFlip = document.querySelector(".show-more");
+let linksShowFlip = document.querySelector(".bx-chevron-down");
+showMoreFlip.addEventListener("click", () => {
+  linksShowFlip.classList.toggle("arrow-flip");
 });
 
 // ==== REMOVE ATIVOS AO CLICAR NO BODY ==== //
 $(document).mouseup(function (e) {
+    var messenger = $('.messenger');
     var notificationBtn = $('.notification');
     var userBtn = $('.user');
+
+    if (!messenger.is(e.target) && messenger.has(e.target).length === 0) {
+      if ($('.messenger-dropdown').hasClass('dropdown-colapse')) {
+          $('.messenger-dropdown').removeClass('dropdown-colapse');
+          $('.messenger').removeClass('list-svg-active');
+      }
+  }
     
     if (!notificationBtn.is(e.target) && notificationBtn.has(e.target).length === 0) {
       if ($('.notification-dropdown').hasClass('dropdown-colapse')) {
@@ -52,12 +84,6 @@ $(document).mouseup(function (e) {
             $('.user').removeClass('list-svg-active');
         }
     }
-
-  //   if (!container.is(e.target) && container.has(e.target).length === 0) {
-  //     if ($('.has-colapse').hasClass('list-svg-active')) {
-  //         $('.has-colapse').removeClass('list-svg-active');
-  //     }
-  // }
 });
 
 // ==== DARKMODE ==== //
