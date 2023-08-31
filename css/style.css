@@ -1406,7 +1406,41 @@ color: #F3425F !important;
     color: var(--text);
 }
 
-@media screen and (max-width: 1280px) {}
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    body{
+        background: #fff;
+    }
+    
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        width: 100%;
+        height: 100vh;
+        padding: 10PX;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mobile-content {
+        text-align: center;
+    }
+
+    .mobile-content h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .mobile-content img {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 992px) {}
 
